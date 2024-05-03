@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "../App.css";
 import { CardText } from "react-bootstrap";
+import NextDays from "./NextDays";
 const MeteoCard = () => {
   const [meteo, setMeteo] = useState(null);
   const [error, setError] = useState(null);
@@ -40,7 +41,7 @@ const MeteoCard = () => {
   return (
     <>
       <Card className="meteoCard  text-light " style={{ width: "100%" }}>
-        {/* {meteo && (
+        {meteo && (
           <Card.Body className="text-center">
             <Card.Title>
               <img src={`https://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`} alt="" />
@@ -53,13 +54,8 @@ const MeteoCard = () => {
             <CardText>Wind Speed: {meteo.wind.speed} km/h</CardText>
           </Card.Body>
         )}
-        <Card.Body className="text-center"></Card.Body> */}
-        <p>culo</p>
-        <p>culo</p>
-        <p>culo</p>
-        <p>culo</p>
-        <p>culo</p>
       </Card>
+      <NextDays />
     </>
   );
 };

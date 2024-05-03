@@ -1,16 +1,16 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import SearchBar from "./SearchBar";
+
 const MyNavbar = () => {
   return (
     <>
       <Navbar className="MyNavbar">
         <Container>
-          <Navbar.Brand className="text-white" href="/MeteoCard">
+          <Navbar.Brand className="text-white" href="/">
             Home
           </Navbar.Brand>
-          <SearchBar />
-          <Navbar.Brand className="text-white" href="/NextDays">
+
+          <Navbar.Brand className="text-white" href="NextDays">
             Next Days
           </Navbar.Brand>
         </Container>

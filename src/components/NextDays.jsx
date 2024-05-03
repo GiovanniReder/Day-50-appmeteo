@@ -41,8 +41,8 @@ const NextDays = () => {
         <>
           <Container>
             <Row>
-              {/* <Col xs={12} md={2}>
-                <Card className="text-center m-5" style={{ width: "100%" }}>
+              {/* <Col xs={12} md={3}>
+              <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header>{meteo.list[6].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
                     <ListGroup.Item>{meteo.list[6].weather.main}</ListGroup.Item>
@@ -56,8 +56,8 @@ const NextDays = () => {
                   </ListGroup>
                 </Card>
               </Col>
-              <Col xs={12} md={2}>
-                <Card className="text-center m-5" style={{ width: "100%" }}>
+              <Col xs={12} md={3}>
+                <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header>{meteo.list[14].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
                     <ListGroup.Item>{meteo.list[14].weather.main}</ListGroup.Item>
@@ -71,8 +71,8 @@ const NextDays = () => {
                   </ListGroup>
                 </Card>
               </Col>
-              <Col xs={12} md={2}>
-                <Card className="text-center m-5" style={{ width: "100%" }}>
+              <Col xs={12} md={3}>
+                <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header>{meteo.list[22].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
                     <ListGroup.Item>{meteo.list[22].weather.main}</ListGroup.Item>
@@ -86,8 +86,8 @@ const NextDays = () => {
                   </ListGroup>
                 </Card>
               </Col>
-              <Col xs={12} md={2}>
-                <Card className="text-center m-5" style={{ width: "100%" }}>
+              <Col xs={12} md={3}>
+                <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header>{meteo.list[30].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
                     <ListGroup.Item>{meteo.list[30].weather.main}</ListGroup.Item>
@@ -100,51 +100,19 @@ const NextDays = () => {
                     </ListGroup.Item>
                   </ListGroup>
                 </Card>
-              </Col>
-              <Col xs={12} md={2}>
-                <Card className="text-center m-5" style={{ width: "100%" }}>
-                  <Card.Header>{meteo.list[38].dt_txt}</Card.Header>
-                  <ListGroup variant="flush">
-                    <ListGroup.Item>{meteo.list[38].weather.main}</ListGroup.Item>
-                    <ListGroup.Item>{meteo.list[38].main.temp}&deg; C</ListGroup.Item>
-                    <ListGroup.Item>
-                      <div>
-                        <ListGroup.Item>Wind: {meteo.list[38].wind.speed} km/h</ListGroup.Item>
-                        <ListGroup.Item>Humidity: {meteo.list[38].main.humidity} %</ListGroup.Item>
-                      </div>
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Card>
-              </Col>
-              <Col xs={12} md={2}>
-                <Card className="text-center m-5" style={{ width: "100%" }}>
-                  <Card.Header>{meteo.list[38].dt_txt}</Card.Header>
-                  <ListGroup variant="flush">
-                    <ListGroup.Item>{meteo.list[38].weather.main}</ListGroup.Item>
-                    <ListGroup.Item>{meteo.list[38].main.temp}&deg; C</ListGroup.Item>
-                    <ListGroup.Item>
-                      <div>
-                        <ListGroup.Item>Wind: {meteo.list[38].wind.speed} km/h</ListGroup.Item>
-                        <ListGroup.Item>Humidity: {meteo.list[38].main.humidity} %</ListGroup.Item>
-                      </div>
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Card>
               </Col> */}
-              <Col>
-                <p>1</p>
+
+              <Col xs={12} md={3}>
+                <p>1111111111111111111111111</p>
               </Col>
-              <Col>
-                <p>1</p>
+              <Col xs={12} md={3}>
+                <p>11111111111111111111</p>
               </Col>
-              <Col>
-                <p>1</p>
+              <Col xs={12} md={3}>
+                <p>11111111111111111111111</p>
               </Col>
-              <Col>
-                <p>1</p>
-              </Col>
-              <Col>
-                <p>1</p>
+              <Col xs={12} md={3}>
+                <p>1111111111111111111111111111</p>
               </Col>
             </Row>
           </Container>

@@ -6,16 +6,20 @@ import NextDays from "./components/NextDays";
 import MyNavbar from "./components/MyNavbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <>
-      {/* <BrowserRouter>
-        <MyNavbar />
-        <Routes>
-          <Route path="/" element={MeteoCard} />
-          <Route path="/NextDays/elementId" element={NextDays} />
-        </Routes>
-      </BrowserRouter> */}
+      <div>
+        <BrowserRouter>
+          <MyNavbar />
+          <Routes>
+            <Route path="/" element={<SearchBar />} />
+            <Route path="/NextDays" element={<MeteoCard />} />
+            <Route path="/NextDays" element={<NextDays />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      {/* <MyNavbar />
       <div className="body  p-4">
         <div className="App  d-flex m-5">
           <MeteoCard />
@@ -26,9 +30,9 @@ function App() {
         <div className="d-flex ">
           <NextDays />
         </div>
-      </div>
+      </div> */}
     </>
   );
-}
+};
 
 export default App;
