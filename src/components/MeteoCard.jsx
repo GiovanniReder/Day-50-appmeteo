@@ -40,7 +40,7 @@ const MeteoCard = () => {
   return (
     <>
       <Card className="meteoCard  text-light " style={{ width: "100%" }}>
-        {meteo && (
+        {/* {meteo && (
           <Card.Body className="text-center">
             <Card.Title>
               <img src={`https://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`} alt="" />
@@ -53,7 +53,12 @@ const MeteoCard = () => {
             <CardText>Wind Speed: {meteo.wind.speed} km/h</CardText>
           </Card.Body>
         )}
-        <Card.Body className="text-center"></Card.Body>
+        <Card.Body className="text-center"></Card.Body> */}
+        <p>culo</p>
+        <p>culo</p>
+        <p>culo</p>
+        <p>culo</p>
+        <p>culo</p>
       </Card>
     </>
   );
