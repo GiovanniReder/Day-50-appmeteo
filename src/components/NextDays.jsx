@@ -40,13 +40,15 @@ const NextDays = () => {
       {meteo && (
         <>
           <Container>
-            <Row>
-              {/* <Col xs={12} md={3}>
-              <Card className="text-center my-1" style={{ width: "100%" }}>
+            <Row className="my-5">
+              <Col xs={12} md={3}>
+                <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header>{meteo.list[6].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
                     <ListGroup.Item>{meteo.list[6].weather.main}</ListGroup.Item>
                     <ListGroup.Item>{meteo.list[6].main.temp}&deg; C</ListGroup.Item>
+                    <ListGroup.Item>{meteo.list[6].weather.main}</ListGroup.Item>
+
                     <ListGroup.Item>
                       <div>
                         <ListGroup.Item>Wind:{meteo.list[6].wind.speed} km/h</ListGroup.Item>
@@ -100,9 +102,9 @@ const NextDays = () => {
                     </ListGroup.Item>
                   </ListGroup>
                 </Card>
-              </Col> */}
+              </Col>
 
-              <Col xs={12} md={3}>
+              {/* <Col xs={12} md={3}>
                 <p>1111111111111111111111111</p>
               </Col>
               <Col xs={12} md={3}>
@@ -113,7 +115,7 @@ const NextDays = () => {
               </Col>
               <Col xs={12} md={3}>
                 <p>1111111111111111111111111111</p>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </>
