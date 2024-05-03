@@ -1,38 +1,11 @@
-.App {
-  text-align: center;
+.meteoCard {
+  background: #8a9fb6;
+  background: linear-gradient(180deg, rgb(100, 162, 228) 0%, rgb(175, 196, 216) 74%, rgb(190, 219, 226) 100%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchBar {
+  max-width: 60%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body {
+  background: rgb(253, 187, 45);
+  background: linear-gradient(180deg, rgba(253, 187, 45, 1) 59%, rgba(255, 255, 255, 1) 100%);
 }
