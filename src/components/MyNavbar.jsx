@@ -11,7 +11,7 @@ const MyNavbar = () => {
           </Navbar.Brand>
 
           <Navbar.Brand className="text-white" href="NextDays">
-            Next Days
+            Weather
           </Navbar.Brand>
         </Container>
       </Navbar>

@@ -39,13 +39,13 @@ const NextDays = () => {
     <>
       {meteo && (
         <>
-          <Container className=" my-3 p-5" style={{ maxWidth: "100%" }}>
+          <Container className=" my-3" style={{ maxWidth: "100%" }}>
             <Row className="">
               <Col xs={12} md={3}>
                 <Card className="text-center  my-1" style={{ width: "100%" }}>
                   <Card.Header className="meteoCard border">{meteo.list[6].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
-                    <ListGroup.Item>{meteo.list[6].weather.main}</ListGroup.Item>
+                    <ListGroup.Item>{meteo.list[6].weather[0].description}</ListGroup.Item>
                     <ListGroup.Item>{meteo.list[6].main.temp}&deg; C</ListGroup.Item>
 
                     <ListGroup.Item>
@@ -61,7 +61,7 @@ const NextDays = () => {
                 <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header className="meteoCard border">{meteo.list[14].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
-                    <ListGroup.Item>{meteo.list[14].weather.main}</ListGroup.Item>
+                    <ListGroup.Item>{meteo.list[14].weather[0].main}</ListGroup.Item>
                     <ListGroup.Item>{meteo.list[14].main.temp}&deg; C</ListGroup.Item>
                     <ListGroup.Item>
                       <div>
@@ -76,7 +76,7 @@ const NextDays = () => {
                 <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header className="meteoCard border">{meteo.list[22].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
-                    <ListGroup.Item>{meteo.list[22].weather.main}</ListGroup.Item>
+                    <ListGroup.Item>{meteo.list[22].weather[0].main}</ListGroup.Item>
                     <ListGroup.Item>{meteo.list[22].main.temp}&deg; C</ListGroup.Item>
                     <ListGroup.Item>
                       <div>
@@ -91,7 +91,7 @@ const NextDays = () => {
                 <Card className="text-center my-1" style={{ width: "100%" }}>
                   <Card.Header className="meteoCard border">{meteo.list[30].dt_txt}</Card.Header>
                   <ListGroup variant="flush">
-                    <ListGroup.Item>{meteo.list[30].weather.main}</ListGroup.Item>
+                    <ListGroup.Item>{meteo.list[30].weather[0].main}</ListGroup.Item>
                     <ListGroup.Item>{meteo.list[30].main.temp}&deg; C</ListGroup.Item>
                     <ListGroup.Item>
                       <div>

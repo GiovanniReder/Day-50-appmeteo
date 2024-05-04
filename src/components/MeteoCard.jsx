@@ -40,22 +40,25 @@ const MeteoCard = () => {
 
   return (
     <>
-      <Card className="meteoCard  text-light border " style={{ width: "100%" }}>
-        {meteo && (
-          <Card.Body className="text-center">
-            <Card.Title>
-              <img src={`https://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`} alt="" />
-            </Card.Title>
-            <Card.Text>{meteo.main.temp}&deg; C</Card.Text>
-            <Card.Text>{meteo.weather.description}</Card.Text>
-            <CardText>{meteo.name}</CardText>
-            <CardText>Today</CardText>
-            <CardText>Humidity: {meteo.main.humidity} %</CardText>
-            <CardText>Wind Speed: {meteo.wind.speed} km/h</CardText>
-          </Card.Body>
-        )}
-      </Card>
-      <NextDays />
+      <div className="px-5 py-3">
+        <Card className="meteoCard   text-light border " style={{ width: "100%" }}>
+          {meteo && (
+            <Card.Body className="text-center">
+              <Card.Title>
+                <img src={`https://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`} alt="" />
+              </Card.Title>
+              <Card.Text>Weather: {meteo.weather[0].main}</Card.Text>
+              <Card.Text>{meteo.main.temp}&deg; C</Card.Text>
+              <Card.Text>{meteo.weather.description}</Card.Text>
+              <CardText>{meteo.name}</CardText>
+              <CardText>Today</CardText>
+              <CardText>Humidity: {meteo.main.humidity} %</CardText>
+              <CardText>Wind Speed: {meteo.wind.speed} km/h</CardText>
+            </Card.Body>
+          )}
+        </Card>
+        <NextDays />
+      </div>
     </>
   );
 };

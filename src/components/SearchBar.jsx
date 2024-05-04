@@ -1,6 +1,9 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import logo from "../logo.jpg";
+
+// NON SONO RIUSCITO A COMPLETARE LA SEARCHBAR
+
 const handleSubmit = (e) => {
   e.preventDefault();
   fetch(`http://api.openweathermap.org/geo/1.0/direct?q=torino&limit=1&appid=0723d840e65f96fe1c8a7878d311bb37`);
