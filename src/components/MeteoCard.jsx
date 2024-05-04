@@ -40,7 +40,7 @@ const MeteoCard = () => {
 
   return (
     <>
-      <Card className="meteoCard  text-light " style={{ width: "100%" }}>
+      <Card className="meteoCard  text-light border " style={{ width: "100%" }}>
         {meteo && (
           <Card.Body className="text-center">
             <Card.Title>

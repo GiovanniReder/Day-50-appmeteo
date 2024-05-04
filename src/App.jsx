@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MeteoCard from "./components/MeteoCard";
 import SearchBar from "./components/SearchBar";
-import NextDays from "./components/NextDays";
+
 import MyNavbar from "./components/MyNavbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -15,7 +15,6 @@ const App = () => {
           <Routes>
             <Route path="/" element={<SearchBar />} />
             <Route path="/NextDays" element={<MeteoCard />} />
-            <Route path="/NextDays" element={<NextDays />} />
           </Routes>
         </BrowserRouter>
       </div>
